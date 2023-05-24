@@ -71,6 +71,51 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-bubble-sort" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/24/bubble-sort/" class="article-date">
+  <time class="dt-published" datetime="2023-05-24T12:00:30.000Z" itemprop="datePublished">2023-05-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/24/bubble-sort/">bubble sort</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>写出冒泡排序算法需要搞懂两件事：</p>
+<p>1.要进行几轮循环（外循环）</p>
+<p>2.每一次循环我要做什么事情（内循环）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">package shuzu;</span><br><span class="line"></span><br><span class="line">public class maopao &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        int arr[] = &#123;1, 93, 49, 45, 20&#125;;</span><br><span class="line">        int temp = 0;</span><br><span class="line">        for (int i = 0; i&lt;arr.length-1; i++)&#123;//循环数组长度-1轮</span><br><span class="line">            for (int j = 0; j&lt; arr.length-1-i; j++)&#123; //每一轮将最大的或者最小的移到最后</span><br><span class="line">                if (arr[j]&gt;arr[j+1])&#123;</span><br><span class="line">                    temp = arr[j+1];</span><br><span class="line">                    arr[j+1] = arr[j];</span><br><span class="line">                    arr[j] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for (int i = 0; i&lt; arr.length; i++)&#123;</span><br><span class="line">            System.out.print(arr[i] + &quot; &quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/05/24/bubble-sort/" data-id="cli1nsa420008ncw81kvc5ygq" data-title="bubble sort" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" rel="tag">冒泡排序</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-array" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/04/07/array/" class="article-date">
@@ -112,7 +157,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/07/array/" data-id="clhamm7ot0001lcw80aem7x0h" data-title="array" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/07/array/" data-id="cli1npufp0001ncw8cn8o8xvk" data-title="array" class="article-share-link">Share</a>
       
       
       
@@ -157,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/06/image-insert/" data-id="clhamm7ox0005lcw868n89exq" data-title="怎么用Typora插入图片" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/06/image-insert/" data-id="cli1npuft0004ncw8d63u0bbp" data-title="怎么用Typora插入图片" class="article-share-link">Share</a>
       
       
       
@@ -197,7 +242,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/05/Hello-World%EF%BC%81/" data-id="clhamm7op0000lcw8ffx46a60" data-title="Hello World！" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/05/Hello-World%EF%BC%81/" data-id="cli1npufl0000ncw86vrfbvsq" data-title="Hello World！" class="article-share-link">Share</a>
       
       
       
@@ -248,7 +293,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/05/hello-world/" data-id="clhamm7ou0002lcw81gorcrwg" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2023/04/05/hello-world/" data-id="cli1npuft0005ncw81k9i7b4j" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -273,7 +318,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" rel="tag">-图片插入</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" rel="tag">-图片插入</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" rel="tag">冒泡排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a></li></ul>
     </div>
   </div>
 
@@ -283,7 +328,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" style="font-size: 10px;">-图片插入</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 10px;">数组</a>
+      <a href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" style="font-size: 10px;">-图片插入</a> <a href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" style="font-size: 10px;">冒泡排序</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 10px;">数组</a>
     </div>
   </div>
 
@@ -292,7 +337,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/05/">May 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li></ul>
     </div>
   </div>
 
@@ -303,6 +348,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2023/05/24/bubble-sort/">bubble sort</a>
+          </li>
         
           <li>
             <a href="/2023/04/07/array/">array</a>
