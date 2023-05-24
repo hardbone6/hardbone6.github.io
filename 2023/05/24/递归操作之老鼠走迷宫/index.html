@@ -4,14 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>Hexo</title>
+  <title>递归操作之老鼠走迷宫 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364package object;public class migong &amp;#123;    public static void main(String[] arg">
+<meta property="og:type" content="article">
+<meta property="og:title" content="递归操作之老鼠走迷宫">
+<meta property="og:url" content="http://example.com/2023/05/24/%E9%80%92%E5%BD%92%E6%93%8D%E4%BD%9C%E4%B9%8B%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364package object;public class migong &amp;#123;    public static void main(String[] arg">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2023-05-24T12:07:43.000Z">
+<meta property="article:modified_time" content="2023-05-24T12:08:15.864Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="老鼠出迷宫">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -69,9 +74,7 @@
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-递归操作之老鼠走迷宫" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+        <section id="main"><article id="post-递归操作之老鼠走迷宫" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/05/24/%E9%80%92%E5%BD%92%E6%93%8D%E4%BD%9C%E4%B9%8B%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/" class="article-date">
   <time class="dt-published" datetime="2023-05-24T12:07:43.000Z" itemprop="datePublished">2023-05-24</time>
@@ -84,8 +87,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/05/24/%E9%80%92%E5%BD%92%E6%93%8D%E4%BD%9C%E4%B9%8B%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/">递归操作之老鼠走迷宫</a>
+    <h1 class="p-name article-title" itemprop="headline name">
+      递归操作之老鼠走迷宫
     </h1>
   
 
@@ -107,245 +110,19 @@
     </footer>
   </div>
   
-</article>
-
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-bubble-sort" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/05/24/bubble-sort/" class="article-date">
-  <time class="dt-published" datetime="2023-05-24T12:00:30.000Z" itemprop="datePublished">2023-05-24</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/05/24/bubble-sort/">bubble sort</a>
-    </h1>
+    <a href="/2023/05/24/bubble-sort/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">bubble sort</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>写出冒泡排序算法需要搞懂两件事：</p>
-<p>1.要进行几轮循环（外循环）</p>
-<p>2.每一次循环我要做什么事情（内循环）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">package shuzu;</span><br><span class="line"></span><br><span class="line">public class maopao &#123;</span><br><span class="line">    public static void main(String[] args)&#123;</span><br><span class="line">        int arr[] = &#123;1, 93, 49, 45, 20&#125;;</span><br><span class="line">        int temp = 0;</span><br><span class="line">        for (int i = 0; i&lt;arr.length-1; i++)&#123;//循环数组长度-1轮</span><br><span class="line">            for (int j = 0; j&lt; arr.length-1-i; j++)&#123; //每一轮将最大的或者最小的移到最后</span><br><span class="line">                if (arr[j]&gt;arr[j+1])&#123;</span><br><span class="line">                    temp = arr[j+1];</span><br><span class="line">                    arr[j+1] = arr[j];</span><br><span class="line">                    arr[j] = temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        for (int i = 0; i&lt; arr.length; i++)&#123;</span><br><span class="line">            System.out.print(arr[i] + &quot; &quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/05/24/bubble-sort/" data-id="cli1nsa420008ncw81kvc5ygq" data-title="bubble sort" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" rel="tag">冒泡排序</a></li></ul>
-
-    </footer>
-  </div>
   
 </article>
-
-
-
-  
-    <article id="post-array" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/07/array/" class="article-date">
-  <time class="dt-published" datetime="2023-04-07T13:51:56.000Z" itemprop="datePublished">2023-04-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/07/array/">array</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <blockquote>
-<p>方式1：</p>
-<p>数组类型   数组名[] &#x3D; new 数据类型[大小]</p>
-<p>double[] scores &#x3D;  new double[5];</p>
-<p>double scores[] &#x3D; new double[5]; 二者等价</p>
-</blockquote>
-<blockquote>
-<p>方式2：</p>
-<p>先声明数组：数据类型[] 数组名 or 数据类型 数组名[]</p>
-<p>int[] a; or int a[];</p>
-<p>创建数组： 数组名 &#x3D; new 数据类型[大小]</p>
-<p>a &#x3D; new int[10];</p>
-<p>方式3：</p>
-<p>静态初始化 int a[]&#x3D;{1,2,3,4,5,6};</p>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/07/array/" data-id="cli1npufp0001ncw8cn8o8xvk" data-title="array" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-image-insert" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/06/image-insert/" class="article-date">
-  <time class="dt-published" datetime="2023-04-06T03:21:07.000Z" itemprop="datePublished">2023-04-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/06/image-insert/">怎么用Typora插入图片</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <div align='center'>
-  <img src='../images/diandian.JPG' width=450px>
-  <p align='center' style='font-size:15px;font-family:kaiti;color:blue'>点点 </p>
-</div>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/06/image-insert/" data-id="cli1npuft0004ncw8d63u0bbp" data-title="怎么用Typora插入图片" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" rel="tag">-图片插入</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-Hello-World！" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/05/Hello-World%EF%BC%81/" class="article-date">
-  <time class="dt-published" datetime="2023-04-05T15:14:11.000Z" itemprop="datePublished">2023-04-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/05/Hello-World%EF%BC%81/">Hello World！</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/05/Hello-World%EF%BC%81/" data-id="cli1npufl0000ncw86vrfbvsq" data-title="Hello World！" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/05/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-04-05T14:51:33.220Z" itemprop="datePublished">2023-04-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/05/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/05/hello-world/" data-id="cli1npuft0005ncw81k9i7b4j" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
 
 
 </section>
