@@ -71,6 +71,152 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-可变参数" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/28/%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/" class="article-date">
+  <time class="dt-published" datetime="2023-05-28T14:31:04.000Z" itemprop="datePublished">2023-05-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/28/%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/">可变参数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h4 id="可变参数"><a href="#可变参数" class="headerlink" title="可变参数"></a>可变参数</h4><p>Java允许将同一个类中多个同名同功能但是参数个数不相同的方法，封装成一个方法。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//举个例子</span><br><span class="line">class MyMethod&#123;</span><br><span class="line">	public int calculate(int... num)&#123;//这里的可变参数可以当成数组来使用</span><br><span class="line">		int sum = 0;</span><br><span class="line">		for(int i = 0; i&lt;num.length; i++)&#123;</span><br><span class="line">			sum+=num[i];</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//主函数</span><br><span class="line">public class kebiancanshu &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        MyMethod method = new MyMethod();</span><br><span class="line">        method.calculate(98,91,1);</span><br><span class="line">        method.calculate(1,2,3,4,5)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>使用细节：</p>
+<p>1.可变参数的实参可以为0个或任意多个</p>
+<p>2.可变参数的实参可以为数组</p>
+<p>3.可变参数的本质就是数组</p>
+<p>4.可变参数可以和普通类型的参数一起放在形参列表，但必须保证可变参数在最后</p>
+<p>5.一个形参列表中能出现一个可变参数</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/05/28/%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/" data-id="cli7ir1w50000ysw89aeeag0e" data-title="可变参数" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-构造方法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/28/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/" class="article-date">
+  <time class="dt-published" datetime="2023-05-28T14:30:26.000Z" itemprop="datePublished">2023-05-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/28/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/">构造方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h4 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h4><p>构造方法又叫构造器，是类的一种特殊的方法，他的主要作用是完成对新对象的初始化。</p>
+<p>其基本语法是：</p>
+<p>[修饰符] 方法名（形参列表）{</p>
+<p>​	方法体；</p>
+<p>}</p>
+<p>细节：</p>
+<p>1.构造器的修饰符可以默认，也可以是public、protected、private</p>
+<p>2.构造器没有返回值</p>
+<p>3.方法名和类名字必须一样</p>
+<p>4&#x2F;参数列表和成员方法一样的规则</p>
+<p>5.构造器的调用是由系统完成的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">package object;</span><br><span class="line"></span><br><span class="line">public class constructor &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        aPerson person = new aPerson(&quot;张朝阳&quot;,23);</span><br><span class="line">	    System.out.println(person.name);</span><br><span class="line">        System.out.println(person.age);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">class aPerson&#123;</span><br><span class="line">    String name;</span><br><span class="line">    int age;</span><br><span class="line">    //构造器没有返回值</span><br><span class="line">    //构造器的名称和类名一致</span><br><span class="line">    public aPerson(String pname, int page)&#123;</span><br><span class="line">        System.out.println(&quot;构造器被调用！完成对象属性的初始化。&quot;);</span><br><span class="line">        name = pname;</span><br><span class="line">        age = page;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/05/28/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/" data-id="cli7ir1w90001ysw8a2398a8v" data-title="构造方法" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-方法重载" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/05/28/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" class="article-date">
+  <time class="dt-published" datetime="2023-05-28T14:29:47.000Z" itemprop="datePublished">2023-05-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2023/05/28/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/">方法重载</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h4 id="方法重载（OverLoad）："><a href="#方法重载（OverLoad）：" class="headerlink" title="方法重载（OverLoad）："></a>方法重载（OverLoad）：</h4><p>Java允许同一个类中，多个同名方法的存在，但是要注意的是形参列表不一致！</p>
+<p>注意事项和使用细节：</p>
+<p>1.方法名必须相同</p>
+<p>2.参数列表必须不同（参数类型、参数个数、参数顺序有一个不一样即可）</p>
+<p>3.对返回类型无要求</p>
+<p>例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">class MyMethod&#123;</span><br><span class="line">	public int calculate(int num1, int num2)&#123;</span><br><span class="line">		return num1+num2;</span><br><span class="line">	&#125;</span><br><span class="line">	public int calculate(int num1, int num2,int num3)&#123;</span><br><span class="line">		return num1+num2+num3;</span><br><span class="line">	public double calculate(double num1, double num2)&#123;</span><br><span class="line">		return num1+num2;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2023/05/28/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" data-id="cli7iruv0000054w81bmdh4jm" data-title="方法重载" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" rel="tag">方法重载</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-递归操作之老鼠走迷宫" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/05/24/%E9%80%92%E5%BD%92%E6%93%8D%E4%BD%9C%E4%B9%8B%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/" class="article-date">
@@ -359,7 +505,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" rel="tag">-图片插入</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" rel="tag">冒泡排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%81%E9%BC%A0%E5%87%BA%E8%BF%B7%E5%AE%AB/" rel="tag">老鼠出迷宫</a></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" rel="tag">-图片插入</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" rel="tag">冒泡排序</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%B0%E7%BB%84/" rel="tag">数组</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" rel="tag">方法重载</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%80%81%E9%BC%A0%E5%87%BA%E8%BF%B7%E5%AE%AB/" rel="tag">老鼠出迷宫</a></li></ul>
     </div>
   </div>
 
@@ -369,7 +515,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" style="font-size: 10px;">-图片插入</a> <a href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" style="font-size: 10px;">冒泡排序</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 10px;">数组</a> <a href="/tags/%E8%80%81%E9%BC%A0%E5%87%BA%E8%BF%B7%E5%AE%AB/" style="font-size: 10px;">老鼠出迷宫</a>
+      <a href="/tags/%E5%9B%BE%E7%89%87%E6%8F%92%E5%85%A5/" style="font-size: 10px;">-图片插入</a> <a href="/tags/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F/" style="font-size: 10px;">冒泡排序</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 10px;">数组</a> <a href="/tags/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/" style="font-size: 10px;">方法重载</a> <a href="/tags/%E8%80%81%E9%BC%A0%E5%87%BA%E8%BF%B7%E5%AE%AB/" style="font-size: 10px;">老鼠出迷宫</a>
     </div>
   </div>
 
@@ -391,23 +537,23 @@
       <ul>
         
           <li>
+            <a href="/2023/05/28/%E5%8F%AF%E5%8F%98%E5%8F%82%E6%95%B0/">可变参数</a>
+          </li>
+        
+          <li>
+            <a href="/2023/05/28/%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95/">构造方法</a>
+          </li>
+        
+          <li>
+            <a href="/2023/05/28/%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD/">方法重载</a>
+          </li>
+        
+          <li>
             <a href="/2023/05/24/%E9%80%92%E5%BD%92%E6%93%8D%E4%BD%9C%E4%B9%8B%E8%80%81%E9%BC%A0%E8%B5%B0%E8%BF%B7%E5%AE%AB/">递归操作之老鼠走迷宫</a>
           </li>
         
           <li>
             <a href="/2023/05/24/bubble-sort/">bubble sort</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/07/array/">array</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/06/image-insert/">怎么用Typora插入图片</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/05/Hello-World%EF%BC%81/">Hello World！</a>
           </li>
         
       </ul>
